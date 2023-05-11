@@ -16,4 +16,3 @@ function suma(numero) {
   
   const resultado = suma(numero);
   console.log("La suma es:", resultado);
-  
