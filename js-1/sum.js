@@ -1,4 +1,4 @@
-function suma(numero) {
+/*function suma(numero) {
     if (numero <= 0) {
       return 0; // Si el número es menor o igual a cero, retorna 0
     }
@@ -16,3 +16,18 @@ function suma(numero) {
   
   const resultado = suma(numero);
   console.log("La suma es:", resultado);
+*/
+
+// sum.js
+function suma(numero) {
+  let resultado = 0;
+  for (let i = 1; i <= numero; i++) {
+    resultado += i;
+  }
+  return resultado;
+}
+
+// Código de prueba
+console.log(suma(4)); // 1 + 2 + 3 + 4 = 10
+console.log(suma(10)); // 55
+console.log(suma(15)); // 120
