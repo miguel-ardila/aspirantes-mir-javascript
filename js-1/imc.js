@@ -1,13 +1,10 @@
 function bmi(peso, altura) {
-    let alturaMetros = altura / 100; // Convertir la altura de centímetros a metros
-    let imc = peso / (alturaMetros * alturaMetros);
-    return imc;
-  }
-  
-  // Ejemplo de uso de la función
-  let peso = 70; // en kilogramos
-  let altura = 170; // en centímetros
-  
-  let resultado = bmi(peso, altura);
-  console.log("El IMC es:", resultado.toFixed(2));
-  
+  return peso / (altura * altura);
+}
+
+// Código de prueba
+console.log(bmi(65, 1.8)); // 20.061728395061728
+console.log(bmi(72, 1.6)); // 28.124999999999993
+console.log(bmi(52, 1.75)); // 16.979591836734695
+
+
